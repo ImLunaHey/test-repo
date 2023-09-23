@@ -1,4 +1,4 @@
-on: [push, pull_request_target]
+on: [pull_request_target]
 
 permissions: write-all
 
@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Parse OWNERS
         id: owners
-        uses: imlunahey/owners-check@8c6ddedbece2a7f921b5966e7072087c653598f7
+        uses: imlunahey/owners-check@59f5d743173a94cc85635f48e11ba8098f551e50
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
