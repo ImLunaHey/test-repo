@@ -5,12 +5,12 @@ permissions: write-all
 jobs:
   test_get_owners_action:
     runs-on: ubuntu-latest
-    name: Test
+    name: CI
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Parse OWNERS
+      - name: Owners check
         id: owners
-        uses: imlunahey/owners-check@5e2edaff3d2d972af28e5564265631f98260eb64
+        uses: imlunahey/owners-check@1569d93cf052ec18ea6c27c889f1ef7b577454d6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
