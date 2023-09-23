@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Owners check
         id: owners
-        uses: imlunahey/owners-check@1569d93cf052ec18ea6c27c889f1ef7b577454d6
+        uses: imlunahey/owners-check@0c4e8549fd3860500c51d679954ed5078933da8c
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
