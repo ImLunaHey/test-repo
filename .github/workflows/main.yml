@@ -1,0 +1,14 @@
+on: [push, pull_request_target]
+
+jobs:
+  test_get_owners_action:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Parse OWNERS
+        id: owners
+        uses: imlunahey/owners-check@b7f47876a86012d3e3e17a1313b62bb4b2d0e81a
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
