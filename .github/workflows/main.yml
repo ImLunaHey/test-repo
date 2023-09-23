@@ -9,6 +9,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Parse OWNERS
         id: owners
-        uses: imlunahey/owners-check@b7f47876a86012d3e3e17a1313b62bb4b2d0e81a
+        uses: imlunahey/owners-check@8a7d82b28bbd4714fda94c1dbb5bd2720a80271f
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
