@@ -1,6 +1,6 @@
 on: [push, pull_request_target]
 
-permissions: read-all|write-all
+permissions: write-all
 
 jobs:
   test_get_owners_action:
